@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Harold lists his favorite albums and talks heavy metal related news in his own blog.">
+    <title>Harold's Heavy Metal Blog</title>
+</head>
+<body>
+    <h1>Harold's Favorite Metal Albums</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Artist</th>
+                <th>Album Name</th>
+                <th>Release Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.Cryptopsy</td>
+                <td>"None So Vile"</td>
+                <td>1996</td>
+            </tr>
+            <tr>
+                <td>2.Carcass</td>
+                <td>"Heartwork"</td>
+                <td>1993</td>
+            </tr>
+            <tr>
+                <td>3.Atheist</td>
+                <td>"Elements"</td>
+                <td>1993</td>
+            </tr>
+            <tr>
+                <td>4.Cynic</td>
+                <td>"Traced in Air"</td>
+                <td>2008</td>
+            </tr>
+            <tr>
+                <td>5.Mayhem</td>
+                <td>"Esoteric Warfare"</td>
+                <td>2014</td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <h2>Heavy Metal News</h2>
+        <p>Cannibal Corpse releases a new single entitled "Inhumane Harvest"</p>
+        <a href="https://www.youtube.com/watch?v=qFiGYtX4ey0"> Listen Here! </a>
+    </div>
+    <div>
+        <h3>Harold's Recent Reviews</h3>
+        <ol>
+            <li>Pestilence "Spheres"</li>
+            <li>Slayer "Reign in Blood"</li>
+            <li>Hate Eternal "Upon Desolate Sands"</li>
+        </ol>
+    </div>
+    <div>
+        <h3>Harold Recommends</h3>
+        <ul>
+            <li>Suffocation "Of The Dark Light"</li>
+            <li>Xibalba "Hasta La Muerte"</li>
+            <li>Hierophant "Mass Grave"</li>
+        </ul>
+    </div>
+    <form action="process.php" method="post">
+        <h3>Register for Exciting Metal News</h3>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <div>
+            <h4>Most interested In?</h4>
+            <select name="metal genre">
+                <option value="death metal">Death Metal</option>
+                <option value="heavy metal">Heavy Metal</option>
+                <option value="modern metal">Modern Metal</option>
+                <option value="black metal">Black Metal</option>
+                <option value="thrash metal">Thrash Metal</option>
+                <option value="industrial/other">Industrial/Other</option>
+            </select>
+        </div>
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="decline">Prefer not to say</label>
+            <input type="radio" id="decline" name="gender" value="decline">
+        </div>
+        <div>
+            <h4>Time Period Most Interested In?</h4>
+            <label for="oldschool">Old-School</label>
+            <input type="checkbox" id="oldschool" name="timeperiod" value="oldschool">
+            <label for="classic">Classic</label>
+            <input type="checkbox" id="classic" name="timeperiod" value="classic">
+            <label for="modern">Modern</label>
+            <input type="checkbox" id="modern" name="timeperiod" value="modern">
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+
+
+
+</html>

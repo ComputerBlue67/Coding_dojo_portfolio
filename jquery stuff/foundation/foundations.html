@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery-1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            alert('jquery is workin');
+        })
+    </script>
+
+<style type="text/css">
+    .crimson {
+        color:crimson;
+    }
+</style>
+
+</head>
+<body>
+    <div>
+        <h1>.Click</h1>
+        <div class=btn-clicks>
+            <button>click here</button>
+        </div>
+        <p>click the button for a message!</p>
+        <script>
+            $('.btn-clicks').click(function(){
+                alert('you clicked this');
+            })
+        </script>
+        <hr>
+    </div>
+    <div>
+        <h1>.hide</h1>
+        <div class=btn-hide>
+            <button>click me to hide the paragraph below </button>
+        </div>
+        
+        <p class=hidden-paragraph>click the button to hide me</p>
+        <script>
+            $('.btn-hide').click(function(){
+                $('.hidden-paragraph').hide();
+            })
+        </script>
+        <hr>
+    </div>
+    <div>
+        <h1>.show</h1>
+        <div class=show-exe>
+            <button>click me to show the hidden message</button>
+        </div>
+        <p class=hidden-msg>i was hiding,now i'm back</p>
+        <script>
+            $(document).ready(function(){
+                $('.hidden-msg').hide();
+            })
+            $('.show-exe').click(function(){
+                $('.hidden-msg').show();
+            })
+        </script>
+        <hr>
+    </div>
+    <div>
+        <h1>.toggle</h1>
+        <div class=toggle-exe>
+            <button>click me</button>
+        </div>
+        <p class=para-tog>i can be toggled on and off</p>
+        <script>
+            $('.toggle-exe').click(function(){
+                $('.para-tog').toggle();
+            })
+        </script>
+        <hr>
+    </div>
+    <div>
+        <h1>.slide Up</h1>
+        <div class=slide-up-exe>
+            <button>click me</button>
+        </div>
+        <p class=slide-up>here i will disappear upward</p>
+        <script>
+            $('.slide-up-exe').click(function(){
+                $('.slide-up').slideUp();
+            })
+        </script>
+        <hr>
+    </div>
+    <div>
+        <h1>.slide Down</h1>
+        <div class=slide-down-exe>
+            <button>click me to reveal text</button>
+        </div>
+        <p class=slide-down>hello i was hidden </p>
+        <script>
+            $(document).ready(function(){
+                $('.slide-down').hide();
+            })
+            $('.slide-down-exe').click(function(){
+                $('.slide-down').slideDown();
+            })
+        </script>
+        <hr>
+    </div>
+    <div>
+        <h1>.slide Toggle</h1>
+        <div class=slide-toggle-exe>
+            <button>click here</button>
+        </div>
+        <p class=slide-toggle>i can be toggled</p>
+        <script>
+            $('.slide-toggle-exe').click(function(){
+                $('.slide-toggle').slideToggle();
+            })
+        </script>
+        <hr>
+    </div>
+    <div>
+        <h1>.fadeIn</h1>
+        <div class=fadein-exe>
+            <button>click here</button>
+        </div>
+        <p class=fadein>i was hidden</p>
+        <script>
+            $(document).ready(function(){
+                $('.fadein').hide();
+            })
+            $('.fadein-exe').click(function(){
+                $('.fadein').fadeIn();
+            })
+        </script>
+        <hr>
+    </div>
+    <div>
+        <h1>.fadeOut</h1>
+        <div class=fadeout-exe>
+            <button>click here</button>
+        </div>
+        <p class=fadeout>i will disappear</p>
+        <script>
+            $('.fadeout-exe').click(function(){
+                $('.fadeout').fadeOut();
+            })
+        </script>
+        <hr>
+    </div>
+    <div>
+        <h1>.addClass</h1>
+        <div class=addclass-exe>
+            <button>click me to add color to the text</button>
+        </div>
+        <p class=addclass>i will change color</p>
+        <script>
+            $('.addclass-exe').click(function(){
+                $('.addclass').addClass("crimson");
+            })
+        </script>
+        <hr>
+    </div>
+    <div>
+        <h1>.before</h1>
+        <div class=before-exe>
+            <button>click here</button>
+        </div>
+        <p class=before-temp>click the button to keep adding an h2 tag above me</p>
+    <script>
+        $('.before-exe').click(function(){
+            $('.before-temp').before("<h2>Hello everyone</h2>");
+        })
+    </script>
+    <hr>
+    </div>
+
+
+    <div>
+        <h1>.after</h1>
+        <div class=after-exe>
+            <button>click me</button>
+        </div>
+    <p class=after-temp>click the button to keep adding an h3 tag below me</p>
+    <script>
+        $('.after-exe').click(function(){
+            $('.after-temp').after("<h3>Hello im here again</h3>");
+        })
+    </script>
+    <hr>
+    </div>
+
+    <div>
+        <h1>.append</h1>
+        <div class=append-exe>
+            <button>click me</button>
+        </div>
+    <p class=append-temp>click the button to keep adding a message after this p tag</p>
+    <script>
+        $('.append-exe').click(function(){
+            $('.append-temp').append("<h3>hi guys</h3>");
+        })
+    </script>
+    <hr>
+    </div>
+
+    <div>
+        <h1>.html</h1>
+        <div class=html-exe>
+            <button>click me</button>
+        </div>
+    <p class=html-temp>click the button to replace me</p>
+    <script>
+        $('.html-exe').click(function(){
+            $('.html-temp').html("<h3>hello world</h3>");
+        })
+    </script>
+    <hr>
+    </div>
+
+    <div>
+        <h1>.attr</h1>
+        <div class=attr-exe>
+            <button>click me to retrieve my class</button>
+        </div>
+        <div class=attr2-exe>
+            <button>click me to set the class attribute to crimson</button>
+        </div>
+        <p>Retreives or sets an attribute of an element</p>
+    <p class=attr-temp id=attribute >i am a p tag with class attr-temp. class=</p>
+    <script>
+        $('.attr-exe').click(function(){
+            var classVal = $("#attribute").attr("class")
+			$('#attribute').append(classVal);
+        })
+        $('.attr2-exe').click(function(){
+            $('#attribute').attr("class","crimson");
+        })
+    </script>
+    <hr>
+    </div>
+
+    <div>
+        <h1>.val</h1>
+            <button class=val>Click to retreive the value of the input. Look in your console</button>
+            <button class=val2>click to change the value of the input to "poopoo"</button>
+        <input type="text" name="name" id="val">
+    <p >Retreives or set a value of an input</p>
+    <script>
+        $('.val').click(function(){
+            console.log($("#val").val());
+        })
+        $('.val2').click(function(){
+            $("#val").val("poopoo");
+        })
+    </script>
+    <hr>
+    </div>
+
+    <div>
+        <h1>.text</h1>
+        <div class=text-exe>
+            <button>click me to change the text</button>
+        </div>
+    <p class=text-temp>replace text with .text</p>
+    <script>
+        $('.text-exe').click(function(){
+            $('.text-temp').text("hello");
+        })
+    </script>
+    <hr>
+    </div>
+    
+</body>
+</html>

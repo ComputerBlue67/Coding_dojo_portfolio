@@ -1,0 +1,36 @@
+1 
+pip install django==1.11.9
+
+install specific version of django
+
+2 
+pip list
+lists all currently installed packages for current environment
+
+3 
+deactivate
+shuts down current environment
+
+4 
+pip3 list
+Pip is for python version less than 3.
+and pip3 is used when you want to install packages for python version 3 or higher.
+
+5 
+pip install django==1.11.9 
+requirements already met, django was already installed
+
+6 
+pip freeze
+pip list shows ALL installed packages. pip freeze shows packages YOU installed via pip (or pipenv if using that tool) command in a requirements format
+
+7  pip freeze > requiremets.txt 
+creates a .txt file with installed packages
+
+8 
+pip uninstall Django
+uninstalls django
+
+9 
+pip show Django
+shows django package if installed

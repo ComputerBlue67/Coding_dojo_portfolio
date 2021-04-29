@@ -1,0 +1,89 @@
+code 1
+
+var/val
+hello/"hello
+
+"hello dojo"
+
+code2
+
+var/val
+hello/hello,15
+result/hello,15
+
+"hello result is,15"
+
+code3
+
+var/val
+num/3
+result/18
+
+"num is 3,result is 18"
+
+code4
+
+var/val
+num/15
+num2/10
+result=log and return
+
+"15,10,10,15"
+
+code5
+
+var/val
+num/15
+num2/10
+result=timestwo
+
+"15,10,20,10"
+
+code6
+
+var/val
+y/6,10
+num/3,5 
+result = timesTwoAgain(3) + timesTwoAgain(5)
+
+"num is 3,6,num is 5,10,result is 16 "
+
+code7
+
+var/val
+num1/2,3
+num2/3,5
+
+"5,8"
+
+
+code8
+
+var/val
+num1/2,3
+num2/3,5
+"2,5,3,8"
+
+code9
+
+var/val
+num1/2,3
+num2/3,5
+sum/5,8
+result= sumNums(2,3) + sumNums(3,5)
+
+"sum is 5,5,sum is 8,8 result is 13"
+
+code10
+
+var/val
+sum/5,6,8
+num1/2,3,3
+num2/3,3,5
+result = sumNums(2,3) + sumNums(3,sumNums(2,1)) + sumNums(sumNums(2,1),sumNums(2,3))
+
+"sum is 5,sum is 6,sum is 8, result is 19"
+
+
+
+

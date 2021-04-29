@@ -1,0 +1,19 @@
+code 1
+var/value 
+1 paula
+2 smith
+3 1234 main street
+4 st louis
+5 mo
+
+code 2
+frozen
+1 broccoli
+2 ice cream
+3 hashbrowns
+
+code 3
+1 bambi
+2 beetlejuice
+3 toy story
+4 zoro

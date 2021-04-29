@@ -1,0 +1,8 @@
+1 create new folder on local machine
+2 access through terminal 
+3 create new git repository by using "git init"
+4 add/touch new files and save them 
+5 stage and commit these new files to the git repo
+6 use-> git add remote origin https://github.com/ComputerBlue67/basic_repo
+7 use-> git push origin master
+8 check your github by refreshing page   

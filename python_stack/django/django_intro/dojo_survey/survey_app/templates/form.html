@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey</title>
+</head>
+<body>
+    <h1>Fill out the form</h1>
+    <form action ="/process" method ='POST'>
+        {% csrf_token %}
+        Name:<input type="text" name='name'>
+        Favorite Ice-Cream:<select name ='ice_cream'>
+            <option value = "chocolate">Chocolate</option>
+            <option value = "vanilla">Vanilla</option>
+            <option value = "strawberry">Strawberry</option>
+        </select>
+        Topping:<select name = 'topping'>
+            <option value = "nuts">Nuts</option>
+            <option value = "fruits">Fruits</option>
+            <option value = "sprinkles">Sprinkles</option>
+        </select>
+        <input type="submit" value ='View-User'>
+    </form>
+    
+</body>
+</html>
