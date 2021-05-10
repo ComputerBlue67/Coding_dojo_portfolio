@@ -1,0 +1,9 @@
+python manage.py shell
+from dojos_app import Dojo,Ninja
+Dojo.objects.create(name="",city="",state="")
+if using variables Dojo1.delete(),dojo2.delete()...,or c=Dojo.objects.get(id=) then c.delete()
+Dojo.objects.create(name="",city="",state="")
+Ninja.objects.create(first_name="",last_name="",dojo=nameofdojo)
+Dojo.objects.first().ninjas.all()
+Dojo.objects.last().ninjas.all()
+Ninja.objects.last.dojo
