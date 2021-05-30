@@ -50,3 +50,34 @@ def logout(request):
 def post_mess(request):
     Wall_message.objects.create(message=request.POST['mess'], poster=User.objects.get(id=request.session['id']))
     return redirect('/success')
+
+def post_comment(request,id):
+    poster = User.objects.get(id=request.session['id'])
+    message = Wall_message.objects.get(id=id)
+    Comment.objects.create(comment=request.POST['comment'], poster=poster,Wall_message=message)
+    return redirect('/success')
+
+def profile(request,id):
+    context = {
+        'user': User.objects.get(id=id)
+    }
+    return render(request,'profile.html',context)
+
+def add_like(request,id):
+    liked_message = Wall_message.objects.get(id=id)
+    user_liking = User.objects.get(id=request.session['id'])
+    liked_message.user_likes.add(user_liking)
+    return redirect('/success')
+
+def delete_comment(request, id):
+    destroyed = Comment.objects.get(id=id)
+    destroyed.delete()
+    return redirect('/success')
+
+def edit(request, id):
+    edit_user = User.objects.get(id=id)
+    edit_user.first_name = request.POST['fname']
+    edit_user.last_name = request.POST['lname']
+    edit_user.email = request.POST['email']
+    edit_user.save()
+    return redirect('/success')

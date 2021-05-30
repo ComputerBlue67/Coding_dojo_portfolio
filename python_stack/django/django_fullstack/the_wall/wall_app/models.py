@@ -28,6 +28,7 @@ class User(models.Model):
 class Wall_message(models.Model):
     message = models.CharField(max_length=255)
     poster = models.ForeignKey(User,related_name='user_messages',on_delete=models.CASCADE)
+    user_likes = models.ManyToManyField(User, related_name='liked_posts')
 
 class Comment(models.Model):
     comment = models.CharField(max_length=255)
