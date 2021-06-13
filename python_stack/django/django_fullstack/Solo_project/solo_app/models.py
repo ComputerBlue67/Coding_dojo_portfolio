@@ -60,7 +60,7 @@ class UserManager(models.Manager):
             email = form['email'],
             password = pw,
         )
-        
+
 
 class User (models.Model):
     first_name = models.CharField(max_length=255)
@@ -75,3 +75,12 @@ class User (models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     objects = UserManager()
+
+class File(models.Model):
+    file = models.FileField(upload_to="images")
+
+class Menu_item(models.Model):
+    name = models.CharField(max_length=255)
+    description = models.TextField()
+    price = models.DecimalField(max_digits=5, decimal_places=2)
+    image = models.CharField(max_length=5000, null=True, blank=True)
